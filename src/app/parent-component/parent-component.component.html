@@ -1,0 +1,12 @@
+<div class="card shadow-lg parent-component" style="margin-top: 30px;">
+  <div class="card-header">
+    <h2 class="card-title">Question 4</h2>
+  </div>
+  <div class="card-body">
+    <app-child-component
+      [messageFromParent]="parentMessage"
+      (notifyParent)="handleChildEvent($event)"
+    ></app-child-component>
+    <p class="child-message">Message from Child: <strong>{{ childMessage }}</strong></p>
+  </div>
+</div>

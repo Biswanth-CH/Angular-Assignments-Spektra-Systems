@@ -1,0 +1,96 @@
+.directives {
+  margin-left: 90px;
+  max-width: 600px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 500px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background: rgb(40, 40, 40);
+  color: white;
+  border-radius: 15px 15px 0 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.ngif-message {
+  font-size: 1rem;
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.list-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.ngfor-list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  background: #f1f1f1;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+.ngclass-text {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.highlight {
+  background: rgb(255, 215, 0);
+  color: black;
+  font-weight: bold;
+}
+
+.btn-primary {
+  width: 100%;
+  margin-top: 20px;
+  background: rgb(51, 160, 249);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+.btn-primary:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}

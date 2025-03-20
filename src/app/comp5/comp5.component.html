@@ -1,0 +1,25 @@
+<div class="card shadow-lg directives" style="margin-top: 30px;">
+  <div class="card-header">
+    <h2 class="card-title">Directives Example</h2>
+  </div>
+  <div class="card-body">
+    <p *ngIf="showMessage" class="ngif-message">
+      This message is displayed using *ngIf.
+    </p>
+    <button (click)="showMessage = !showMessage" class="btn btn-primary">
+      Toggle Message
+    </button>
+
+    <h3 class="list-title">List of Items:</h3>
+    <ul class="ngfor-list">
+      <li *ngFor="let item of items" class="list-item">{{ item }}</li>
+    </ul>
+
+    <p [ngClass]="{ 'highlight': isHighlighted }" class="ngclass-text">
+      This text is dynamically styled using ngClass.
+    </p>
+    <button (click)="isHighlighted = !isHighlighted" class="btn btn-primary">
+      Toggle Highlight
+    </button>
+  </div>
+</div>

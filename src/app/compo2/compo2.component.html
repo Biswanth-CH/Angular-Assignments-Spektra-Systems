@@ -1,0 +1,17 @@
+<div class="card shadow-lg" style="margin-left: 90px; margin-top: 30px;">
+  <div class="card-header">
+    <h2 class="card-title">Question 2</h2>
+  </div>
+  <div class="card-body">
+    <div class="mb-4">
+      <label for="inputField" class="form-label">Enter some text: </label>
+      <input 
+        id="inputField" 
+        [(ngModel)]="inputText" 
+        class="form-control" 
+        placeholder="Type something..." 
+      />
+    </div>
+    <p>You entered: <strong>{{ inputText }}</strong></p>
+  </div>
+</div>
